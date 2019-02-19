@@ -1,0 +1,16 @@
+{
+	"name": "homepage",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"compile:sass": "node-sass sass/main.scss css/style.css -w",
+		"dev": "concurrently \"live-server\" \"npm run-script compile:sass\""
+	},
+	"author": "",
+	"license": "MIT",
+	"devDependencies": {
+		"concurrently": "^4.1.0",
+		"node-sass": "^4.11.0"
+	}
+}
