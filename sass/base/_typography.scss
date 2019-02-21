@@ -50,6 +50,14 @@ body {
 		transform: scale(1.05);
 		text-shadow: 0.5rem 1rem 2rem rgba($color-black-1, 0.2);
 	}
+
+	&-light {
+		background-image: linear-gradient(
+			to right,
+			$color-tertriary-light,
+			$color-tertriary-dark
+		);
+	}
 }
 
 .heading-tetriary {
