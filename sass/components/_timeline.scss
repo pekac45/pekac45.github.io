@@ -1,0 +1,27 @@
+.timeline {
+	// background-color: orangered;
+	position: relative;
+	margin-top: 10rem;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	&__event {
+		&--picture {
+			background-color: $color-white-1;
+			height: 10rem;
+			width: 10rem;
+			border-radius: 100%;
+
+			&--future {
+				border: 0.5rem solid $color-grey-dark-2;
+			}
+		}
+	}
+
+	&__line {
+		position: absolute;
+		top: 30%;
+		left: 11rem;
+		&--future {
+		}
+	}
+}

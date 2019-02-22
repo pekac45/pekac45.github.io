@@ -87,9 +87,13 @@ body {
   font-size: 1.6rem;
   font-weight: 700;
   text-transform: uppercase; }
+  .heading-tetriary--light {
+    color: #eee; }
 
 .paragraph {
   font-size: 1.6rem; }
+  .paragraph--light {
+    color: #eee; }
   .paragraph:not(:last-child) {
     margin-bottom: 3rem; }
 
@@ -230,6 +234,23 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center; }
+
+.timeline {
+  position: relative;
+  margin-top: 10rem;
+  left: 50%;
+  transform: translate(-50%, -50%); }
+  .timeline__event--picture {
+    background-color: #fff;
+    height: 10rem;
+    width: 10rem;
+    border-radius: 100%; }
+    .timeline__event--picture--future {
+      border: 0.5rem solid #999; }
+  .timeline__line {
+    position: absolute;
+    top: 30%;
+    left: 11rem; }
 
 .row {
   max-width: 114rem;
