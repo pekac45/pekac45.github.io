@@ -98,4 +98,13 @@
 		background-color: $color-twitter;
 		border-bottom: 1px solid $color-twitter;
 	}
+
+	&-linkedin {
+		background-color: $color-grey-light-2;
+		border-bottom: 1px solid $color-linkedin;
+		&:hover {
+			background-color: $color-linkedin;
+			border-bottom: 1px solid $color-linkedin;
+		}
+	}
 }

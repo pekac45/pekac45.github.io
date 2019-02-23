@@ -187,6 +187,13 @@ body {
   background-color: #1DA1F2;
   border-bottom: 1px solid #1DA1F2; }
 
+.btn-text-linkedin {
+  background-color: #eee;
+  border-bottom: 1px solid #0077B5; }
+  .btn-text-linkedin:hover {
+    background-color: #0077B5;
+    border-bottom: 1px solid #0077B5; }
+
 .composition {
   position: relative; }
   .composition__photo {
