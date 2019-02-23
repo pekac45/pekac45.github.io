@@ -244,12 +244,14 @@ body {
     position: absolute;
     top: 3.5rem;
     left: calc(50% - 0.25rem);
-    height: 45rem;
+    height: 120%;
     width: 0.5rem;
     background: #e1e1e1;
     margin: 0 auto;
     z-index: -1; }
   .timeline__event--picture {
+    margin: 0 auto;
+    display: block;
     background-color: #fff;
     height: 7rem;
     width: 7rem;
@@ -257,11 +259,40 @@ body {
     background-size: cover;
     border: 0.5rem solid #eee;
     object-fit: contain; }
+    .timeline__event--picture:hover {
+      transform: scale(1.2);
+      color: #eee;
+      transition: transform 0.8s cubic-bezier(0.66, -2, 0.43, 5);
+      box-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.2); }
+    .timeline__event--picture:hover + .timeline__event--text {
+      transform: translateX(-120%);
+      color: #eee;
+      transition: all 1s; }
+    .timeline__event--picture:hover ~ .timeline__event--time-date {
+      transform: scale(1.05);
+      text-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.2);
+      transition: all 0.2s; }
+  .timeline__event--text {
+    position: absolute;
+    display: inline-block;
+    color: transparent;
+    width: 30vw;
+    top: -3.5rem;
+    text-align: left;
+    left: 50%;
+    z-index: -1; }
+    .timeline__event--text-2 {
+      top: 10rem; }
+    .timeline__event--text-3 {
+      top: 24rem; }
+    .timeline__event--text-4 {
+      top: 38rem; }
   .timeline__event--time-date {
     position: relative;
-    width: 100%;
     top: -6.5rem;
-    left: 10rem; }
+    left: 55%;
+    width: 15rem;
+    color: #eee; }
 
 .row {
   max-width: 114rem;
