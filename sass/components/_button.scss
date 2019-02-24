@@ -10,6 +10,7 @@
 		transition: all 0.2s;
 		position: relative;
 		font-size: $default-font-size;
+		width: 22rem;
 
 		// Change for the <button> element
 		border: none;
@@ -97,6 +98,11 @@
 	&-twitter:hover {
 		background-color: $color-twitter;
 		border-bottom: 1px solid $color-twitter;
+	}
+
+	&-github:hover {
+		background-color: $color-github;
+		border-bottom: 1px solid $color-github;
 	}
 
 	&-linkedin {
