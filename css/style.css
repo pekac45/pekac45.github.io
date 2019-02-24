@@ -276,7 +276,7 @@ body {
       color: #eee;
       transition: all 1s; }
     .timeline__event--picture:hover ~ .timeline__event--time-date {
-      transform: scale(1.05);
+      transform: scale(1.2);
       text-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.2);
       transition: all 0.2s; }
   .timeline__event--text {

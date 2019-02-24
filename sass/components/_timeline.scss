@@ -42,7 +42,7 @@
 			}
 
 			&:hover ~ .timeline__event--time-date {
-				transform: scale(1.05);
+				transform: scale(1.2);
 				text-shadow: 0.5rem 1rem 2rem rgba($color-black-1, 0.2);
 				transition: all 0.2s;
 			}
