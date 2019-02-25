@@ -435,3 +435,8 @@ body {
   -webkit-clip-path: polygon(0 10%, 100% 0, 100% 90%, 0 100%);
   clip-path: polygon(0 15%, 100% 0, 100% 85%, 0 100%);
   text-align: center; }
+
+.section-work {
+  background-color: #f7f7f7;
+  padding: 25rem 0 15rem 0;
+  margin-top: -25rem; }
