@@ -163,6 +163,12 @@ body {
 .u-margin-top-huge {
   margin-top: 10rem !important; }
 
+.u-margin-top-mobile-reversed {
+  margin-top: inherit; }
+  @media (max-width: 37.5em) {
+    .u-margin-top-mobile-reversed {
+      margin-top: -5rem !important; } }
+
 .btn, .btn:link, .btn:visited {
   text-transform: uppercase;
   text-decoration: none;
@@ -503,7 +509,7 @@ body {
       transition: transform 0.8s cubic-bezier(0.66, -2, 0.43, 5);
       box-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.2); }
     .timeline__event--picture:hover + .timeline__event--text {
-      transform: translateX(-120%);
+      transform: translateX(-140%);
       color: #eee;
       transition: all 1s; }
     .timeline__event--picture:hover ~ .timeline__event--time-date {
@@ -521,16 +527,28 @@ body {
     z-index: -1; }
     .timeline__event--text-2 {
       top: 11rem; }
+      @media (max-width: 37.5em) {
+        .timeline__event--text-2 {
+          top: 0rem; } }
     .timeline__event--text-3 {
       top: 25rem; }
+      @media (max-width: 37.5em) {
+        .timeline__event--text-3 {
+          top: 13rem; } }
     .timeline__event--text-4 {
       top: 41rem; }
+      @media (max-width: 37.5em) {
+        .timeline__event--text-4 {
+          top: 35rem; } }
   .timeline__event--time-date {
     position: relative;
     top: -6.5rem;
-    left: 55%;
+    left: 60%;
     width: 15rem;
     color: #eee; }
+    @media (max-width: 56.25em) {
+      .timeline__event--time-date {
+        left: 75%; } }
 
 .footer {
   background-color: #ccc;
@@ -665,6 +683,7 @@ body {
       right: 3.5rem; } }
 
 .navigation__nav {
+  visibility: hidden;
   height: 100vh;
   width: 0;
   position: fixed;
@@ -710,6 +729,7 @@ body {
   transform: scale(90); }
 
 .navigation__checkbox:checked ~ .navigation__nav {
+  visibility: visible;
   width: 100%;
   opacity: 1; }
 
@@ -754,7 +774,8 @@ body {
   margin-top: -15rem; }
   @media (max-width: 56.25em) {
     .section-about {
-      padding: 2rem; } }
+      padding: 7rem 0 0 0;
+      margin-top: -8rem; } }
 
 .section-professional {
   padding: 15rem 0;
@@ -769,7 +790,8 @@ body {
   text-align: center; }
   @media (max-width: 56.25em) {
     .section-professional {
-      padding: 10rem; } }
+      padding: 10rem;
+      margin-top: 0; } }
 
 .section-work {
   background-color: #f7f7f7;

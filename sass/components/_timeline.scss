@@ -36,7 +36,7 @@
 			}
 
 			&:hover + .timeline__event--text {
-				transform: translateX(-120%);
+				transform: translateX(-140%);
 				color: $color-grey-light-2;
 				transition: all 1s;
 			}
@@ -60,21 +60,34 @@
 
 			&-2 {
 				top: 11rem;
+				@include respond(phone) {
+					top: 0rem;
+				}
 			}
 			&-3 {
 				top: 25rem;
+				@include respond(phone) {
+					top: 13rem;
+				}
 			}
 			&-4 {
 				top: 41rem;
+				@include respond(phone) {
+					top: 35rem;
+				}
 			}
 		}
 
 		&--time-date {
 			position: relative;
 			top: -6.5rem;
-			left: 55%;
+			left: 60%;
 			width: 15rem;
 			color: $color-grey-light-2;
+
+			@include respond(tab-port) {
+				left: 75%;
+			}
 		}
 	}
 }
