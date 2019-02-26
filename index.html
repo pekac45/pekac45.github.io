@@ -44,10 +44,74 @@
 		<meta name="theme-color" content="#ffffff" />
 		<!-- FAVICON END -->
 
+		<script>
+			function closeNav() {
+				document.getElementById("navi-toggle").checked = false;
+			}
+		</script>
+
 		<title>Michal Pekar | This is where the cool slogan lives.</title>
 	</head>
 </html>
 <body>
+		<!-- NAVIGATION -->
+	<div class="navigation">
+		<input type="checkbox" id="navi-toggle" class="navigation__checkbox" />
+		<label
+			for="navi-toggle"
+			class="navigation__button"
+			id="navigation__button"
+		>
+			<span class="navigation__icon">&nbsp;</span>
+		</label>
+		<div class="navigation__background">&nbsp;</div>
+		<nav class="navigation__nav">
+			<ul class="navigation__list">
+				<li class="navigation__item">
+					<a
+						href="#"
+						class="navigation__link"
+						onclick="closeNav()"
+						><span>01</span>Home</a
+					>
+				</li>
+				<li class="navigation__item">
+					<a
+						href="#section-about"
+						class="navigation__link"
+						onclick="closeNav()"
+					>
+						<span>02</span>About
+					</a>
+				</li>
+				<li class="navigation__item">
+					<a
+						href="#section-professional"
+						class="navigation__link"
+						onclick="closeNav()"
+					>
+						<span>03</span>Professional
+					</a>
+				</li>
+				<li class="navigation__item">
+					<a
+						href="#section-work"
+						class="navigation__link"
+						onclick="closeNav()"
+						><span>04</span>Work</a
+					>
+				</li>
+				<li class="navigation__item">
+					<a
+						href="#section-contact"
+						class="navigation__link"
+						onclick="closeNav()"
+						><span>05</span>Contact</a
+					>
+				</li>
+			</ul>
+		</nav>
+	</div>
 	<!-- HEADER -->
 	<header class="header" id="header">
 		<div class="header__logo-box">
@@ -435,6 +499,42 @@
 			</div>
 		</section>
 	</main>
+
+	<!-- FOOTER -->
+	<footer class="footer">
+		<div class="footer__logo-box">
+			<img src="img/logo-color.png" class="footer__logo" alt="Astronaut logo" />
+		</div>
+		<div class="row">
+			<div class="col-1-of-2">
+				<div class="footer__navigation">
+					<ul class="footer__list">
+						<li class="footer__item">
+							<a href="#" class="footer__link">Home</a>
+						</li>
+						<li class="footer__item">
+							<a href="#section-contact" class="footer__link">Contact</a>
+						</li>
+						<li class="footer__item">
+							<a href="#section-about" class="footer__link">About</a>
+						</li>
+						<li class="footer__item">
+							<a href="#section-professional" class="footer__link">Timeline</a>
+						</li>
+						<li class="footer__item">
+							<a href="#section-work" class="footer__link">Work</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="col-1-of-2">
+				<p class="footer__love">
+					This is where "Made with <i class="fas fa-heart"></i> in San
+					Francisco" supposed to live.
+				</p>
+			</div>
+		</div>
+	</footer>
 </body>
 
 <!-- THIS IS THE GRID TEMPLATE
