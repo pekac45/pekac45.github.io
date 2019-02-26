@@ -171,7 +171,7 @@
 	// #
 	// MEDIA QUERY STARTS HERE
 
-	@include respond(tab-land) {
+	@include respond(tab-port) {
 		// FUNCTIONALITY
 		height: auto;
 		border-radius: 0.3rem;

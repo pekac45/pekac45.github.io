@@ -12,10 +12,6 @@
 		font-size: $default-font-size;
 		width: 22rem;
 
-		@include respond(tab-port) {
-			width: initial;
-		}
-
 		// Change for the <button> element
 		border: none;
 		cursor: pointer;

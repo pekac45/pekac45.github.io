@@ -175,9 +175,6 @@ body {
   width: 22rem;
   border: none;
   cursor: pointer; }
-  @media (max-width: 56.25em) {
-    .btn, .btn:link, .btn:visited {
-      width: initial; } }
 
 .btn:hover {
   transform: translateY(-3px);
@@ -336,7 +333,7 @@ body {
     transform: translate(-50%, -50%);
     width: 90%;
     text-align: center; }
-  @media (max-width: 75em) {
+  @media (max-width: 56.25em) {
     .card {
       height: auto;
       border-radius: 0.3rem;
