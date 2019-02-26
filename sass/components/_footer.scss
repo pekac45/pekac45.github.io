@@ -20,13 +20,13 @@
 		height: auto;
 	}
 	&__navigation {
+		text-align: center;
 		border-top: 1px solid $color-grey-dark-1;
 		padding: 2rem;
 		display: inline-block;
 
 		@include respond(tab-port) {
 			width: 100%;
-			text-align: center;
 		}
 	}
 	&__list {
@@ -60,12 +60,12 @@
 
 	&__love {
 		border-top: 1px solid $color-grey-dark-1;
+		text-align: center;
 		padding: 2rem;
 		width: 80%;
 		float: right;
 		@include respond(tab-port) {
 			width: 100%;
-			text-align: center;
 			float: none;
 		}
 	}
