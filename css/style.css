@@ -515,16 +515,16 @@ body {
     display: inline-block;
     color: transparent;
     width: 30vw;
-    top: -3.5rem;
+    top: 0;
     text-align: left;
     left: 50%;
     z-index: -1; }
     .timeline__event--text-2 {
-      top: 10rem; }
+      top: 11rem; }
     .timeline__event--text-3 {
-      top: 24rem; }
+      top: 25rem; }
     .timeline__event--text-4 {
-      top: 38rem; }
+      top: 41rem; }
   .timeline__event--time-date {
     position: relative;
     top: -6.5rem;
