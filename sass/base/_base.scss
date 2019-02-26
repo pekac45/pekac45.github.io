@@ -10,9 +10,23 @@ html {
 	// This defines what 1rem is
 	font-size: 62.5%; // 1 rem = 10px
 	scroll-behavior: smooth;
+
+	@include respond(tab-land) {
+		font-size: 56.25%; // 1 rem = 9px;
+	}
+	@include respond(tab-port) {
+		font-size: 50%; // 1 rem = 8px
+	}
+	@include respond(big-desktop) {
+		font-size: 70%; // 1 rem = 11.2px
+	}
 }
 
 body {
 	box-sizing: border-box;
 	padding: 3rem;
+
+	@include respond(tab-port) {
+		padding: 0;
+	}
 }
