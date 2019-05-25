@@ -9,7 +9,7 @@
 		position: absolute;
 		top: 3.5rem;
 		left: calc(50% - 0.25rem);
-		height: 120%;
+		height: 125%;
 		width: 0.5rem;
 		background: darken($color-grey-light-2, 5%);
 		margin: 0 auto;
@@ -17,6 +17,8 @@
 	}
 
 	&__event {
+		z-index: 1;
+
 		&--picture {
 			margin: 0 auto;
 			display: block;
